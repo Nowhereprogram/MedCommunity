@@ -1,7 +1,7 @@
 package com.sky.constant;
 
 /**
- * 密码常量
+ * 默认密码123456
  */
 public class PasswordConstant {
 

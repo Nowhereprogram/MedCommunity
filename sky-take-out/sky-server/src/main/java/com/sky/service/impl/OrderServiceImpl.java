@@ -76,7 +76,7 @@ public class OrderServiceImpl implements OrderService {
      */
     @Override
     public OrderSubmitVO submitOrder(OrdersSubmitDTO ordersSubmitDTO) {
-//        异常情况的处理（收货地址为空、超出配送氛围、购物车为空）
+//        异常情况的处理
         AddressBook addressBook = addressBookMapper.getById(ordersSubmitDTO.getAddressBookId());
         if (addressBook == null) {
             throw new AddressBookBusinessException(MessageConstant.ADDRESS_BOOK_IS_NULL);
